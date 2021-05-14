@@ -1,0 +1,96 @@
+.technic{
+    padding: 60px 0;
+    width: 100%;
+    height: 100%;
+    .technic__title{
+        margin-bottom: 40px;
+        font-size: 25px;
+        text-transform: uppercase;
+    }
+    .technic__wrapper{
+        margin-bottom: 50px;
+        .technic__subtext{
+            margin-bottom: 10px;
+            text-indent: 25px;
+            font-size: 19px;
+            color: #272931;
+            font-weight: 500;
+            text-align: justify;
+            &:nth-child(2){
+                margin-bottom: 10px;
+            }
+            &:nth-child(3){
+                margin-bottom: 40px;
+            }
+            &:nth-child(8){
+                margin-bottom: 30px;
+            }
+            &:nth-child(10){
+                text-indent: 25px;
+            }
+            &:nth-child(11){
+                text-indent: 0;
+            }
+            &:nth-child(12){
+                text-indent: 25px;
+            }
+            &:nth-child(13){
+                text-indent: 0;
+            }
+            &:nth-child(14){
+                text-indent: 25px;
+            }
+            &:nth-child(15){
+                text-indent: 0;
+            }
+        }
+        .technic__image{
+            margin-bottom: 40px;
+            img{
+                max-width: 600px;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .technic__item{
+            list-style: none;
+            margin-bottom: 10px;
+            &:last-child{
+                margin-bottom: 30px;
+            }
+            .technic__text{
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
+    }
+    .navigator-box{
+        margin-bottom: 20px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        .navigator__link{
+            position: relative;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 25px;
+            color: #272931;
+            &::before{
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: -5px;
+                width: 100%;
+                height: 2px;
+                background-color: #118f97;
+                transform-origin: left;
+                transform: scaleX(0);
+                transition: .3s;
+            }
+            &:hover::before{
+                transform: scaleX(1);
+                transition: .3s;
+            }
+        }
+    }
+}
